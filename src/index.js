@@ -2,12 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import App2 from './App2';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* /* function based Component */ }
+    <App texto = "Componentes I!" />
+
+
+    {/* /* classed based Component */}
+    {/* <App2 nombreclase="Componentes I"/> */}
+
+
+
+
   </React.StrictMode>
 );
 
