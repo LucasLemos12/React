@@ -1,7 +1,8 @@
-const ItemListContainer = () => {
+const ItemListContainer = ({description}) => {
     return (
-        // resto del menu, categorias clickleables
-        <div></div>
+        <div>
+            <h2>Hola Bienvenidos a {description.desc}</h2>
+        </div>
     )
 }
 

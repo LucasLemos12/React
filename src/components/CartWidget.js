@@ -1,9 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faBell } from '@fortawesome/free-solid-svg-icons'
 function CartWidget(){
     return (
-        // resto del menu, categorias clickleables
-        <FontAwesomeIcon icon={faCoffee} />
+        <div>
+            <FontAwesomeIcon icon={faCartShopping} />
+            <FontAwesomeIcon icon={faBell}/>
+            <span>0</span>
+        </div>
     )
 }
 

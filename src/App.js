@@ -1,16 +1,18 @@
+
+import 'bootstrap/dist/css/bootstrap.css';
 import logo from './logo.svg';
 import './App.css';
 import Presentacion from "./Presentacion";
 import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
-import CartWidget from './components/CartWidget';
+import ItemListContainer from "./components/ItemListContainer";
 
-function App({texto}) {
+
+function App() {
   return (
     <div className='App'>
-      <header className='App-header'>
+        
         <NavBar/>
-      </header>
+        <ItemListContainer description={{desc: "SportY"}}/>
     </div>
   );
 }
