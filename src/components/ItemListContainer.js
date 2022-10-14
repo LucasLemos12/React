@@ -1,8 +1,28 @@
-const ItemListContainer = ({description}) => {
+import { useEffect, useState } from "react";
+
+const ItemListContainer = ({opcion}) => {
+        const [items, setItems] = useState ([])
+    
+    useEffect(()=>{
+        const traerProductos = () =>{
+            return new Promise ((res, rej ) =>(
+                setTimeout(() => {
+                    res(opcion);
+                }, 2000)
+            ));
+        };
+        traerProductos()
+        .then((res)=>{
+            setItems(res)
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+    }, []);
+
     return (
-        <div>
-            <h2>Hola Bienvenidos a {description.desc}</h2>
-        </div>
+
+        <li><a href="./">{opcion}</a></li>
     )
 }
 
